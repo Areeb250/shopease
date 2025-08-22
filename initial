@@ -6,6 +6,8 @@
     <title>ShopEase - Business Management Platform</title>
     <meta name="description" content="ShopEase helps shop owners manage sales, expenses, customer data, and generate financial reports with a user-friendly interface.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- REPLACE THE LINE BELOW WITH YOUR ADSENSE CODE -->
+    <script async src="https://pagead2.googlesyndication/pagead/js/adsbygoogle.js?client=ca-app-pub-5794208641157498~4670522455" crossorigin="anonymous"></script>
     <style>
         :root {
             --primary: #4361ee;
@@ -458,17 +460,13 @@
             }
         }
     </style>
-    <!-- Google AdSense Code Snippet -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-EXAMPLE_PUBLISHER_ID" crossorigin="anonymous"></script>
     <script>
-        // Ad configuration
+        // Ad configuration - REPLACE THESE WITH YOUR AD UNIT IDs
         window.adConfig = {
-            // Replace with your actual Ad Unit IDs
-            headerAd: 'YOUR_HEADER_AD_UNIT_ID',
-            contentAd1: 'YOUR_CONTENT_AD_UNIT_ID_1',
-            contentAd2: 'YOUR_CONTENT_AD_UNIT_ID_2',
-            sidebarAd: 'YOUR_SIDEBAR_AD_UNIT_ID',
-            footerAd: 'YOUR_FOOTER_AD_UNIT_ID'
+            headerAd: 'ca-app-pub-5794208641157498/9252765298',
+            contentAd1: 'ca-app-pub-5794208641157498/9252765298',
+            contentAd2: 'ca-app-pub-5794208641157498/9252765298',
+            footerAd: 'ca-app-pub-5794208641157498/9252765298'
         };
     </script>
 </head>
@@ -500,11 +498,11 @@
     <div class="container">
         <div class="ad-space">
             <span class="ad-label">Advertisement</span>
-            <!-- Ad Unit 1: Header Banner -->
+            <!-- REPLACE THIS AD CODE WITH YOURS -->
             <ins class="adsbygoogle"
                  style="display:block"
-                 data-ad-client="ca-pub-EXAMPLE_PUBLISHER_ID"
-                 data-ad-slot="YOUR_HEADER_AD_UNIT_ID"
+                 data-ad-client="ca-app-pub-5794208641157498~4670522455"
+                 data-ad-slot="ca-app-pub-5794208641157498/9252765298"
                  data-ad-format="auto"
                  data-full-width-responsive="true"></ins>
             <script>
@@ -584,11 +582,11 @@
     <div class="container">
         <div class="ad-space">
             <span class="ad-label">Advertisement</span>
-            <!-- Ad Unit 2: Content Banner -->
+            <!-- REPLACE THIS AD CODE WITH YOURS -->
             <ins class="adsbygoogle"
                  style="display:block"
-                 data-ad-client="ca-pub-EXAMPLE_PUBLISHER_ID"
-                 data-ad-slot="YOUR_CONTENT_AD_UNIT_ID_1"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="ca-app-pub-5794208641157498/9252765298"
                  data-ad-format="auto"
                  data-full-width-responsive="true"></ins>
             <script>
@@ -677,11 +675,11 @@
     <div class="container">
         <div class="ad-space">
             <span class="ad-label">Advertisement</span>
-            <!-- Ad Unit 3: Content Banner 2 -->
+            <!-- REPLACE THIS AD CODE WITH YOURS -->
             <ins class="adsbygoogle"
                  style="display:block"
-                 data-ad-client="ca-pub-EXAMPLE_PUBLISHER_ID"
-                 data-ad-slot="YOUR_CONTENT_AD_UNIT_ID_2"
+                 data-ad-client="ca-app-pub-5794208641157498~4670522455"
+                 data-ad-slot="ca-app-pub-5794208641157498/9252765298"
                  data-ad-format="auto"
                  data-full-width-responsive="true"></ins>
             <script>
@@ -703,11 +701,11 @@
     <div class="container">
         <div class="ad-space">
             <span class="ad-label">Advertisement</span>
-            <!-- Ad Unit 4: Footer Banner -->
+            <!-- REPLACE THIS AD CODE WITH YOURS -->
             <ins class="adsbygoogle"
                  style="display:block"
-                 data-ad-client="ca-pub-EXAMPLE_PUBLISHER_ID"
-                 data-ad-slot="YOUR_FOOTER_AD_UNIT_ID"
+                 data-ad-client="ca-app-pub-5794208641157498~4670522455"
+                 data-ad-slot="ca-app-pub-5794208641157498/9252765298"
                  data-ad-format="auto"
                  data-full-width-responsive="true"></ins>
             <script>
@@ -933,33 +931,6 @@
                 button.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.15)';
             });
         });
-
-        // Function to initialize ads
-        function initializeAds() {
-            // This would be called when the page loads
-            console.log('Ad spaces initialized. Replace with your Ad Unit IDs in the adConfig object.');
-            
-            // Example of how to dynamically load ads
-            // const adSpaces = document.querySelectorAll('.ad-space');
-            // adSpaces.forEach((space, index) => {
-            //     const adUnitId = Object.values(window.adConfig)[index];
-            //     if (adUnitId && adUnitId !== 'YOUR_AD_UNIT_ID') {
-            //         space.innerHTML = `
-            //             <span class="ad-label">Advertisement</span>
-            //             <ins class="adsbygoogle"
-            //                 style="display:block"
-            //                 data-ad-client="ca-pub-EXAMPLE_PUBLISHER_ID"
-            //                 data-ad-slot="${adUnitId}"
-            //                 data-ad-format="auto"
-            //                 data-full-width-responsive="true"></ins>
-            //             <script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>
-            //         `;
-            //     }
-            // });
-        }
-
-        // Initialize ads when page loads
-        document.addEventListener('DOMContentLoaded', initializeAds);
     </script>
 </body>
 </html>
