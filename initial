@@ -273,6 +273,18 @@
             text-align: center;
             margin: 2rem 0;
             color: var(--gray);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 150px;
+        }
+
+        .ad-label {
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+            color: var(--gray);
+            text-transform: uppercase;
         }
 
         /* Footer */
@@ -446,6 +458,19 @@
             }
         }
     </style>
+    <!-- Google AdSense Code Snippet -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-EXAMPLE_PUBLISHER_ID" crossorigin="anonymous"></script>
+    <script>
+        // Ad configuration
+        window.adConfig = {
+            // Replace with your actual Ad Unit IDs
+            headerAd: 'YOUR_HEADER_AD_UNIT_ID',
+            contentAd1: 'YOUR_CONTENT_AD_UNIT_ID_1',
+            contentAd2: 'YOUR_CONTENT_AD_UNIT_ID_2',
+            sidebarAd: 'YOUR_SIDEBAR_AD_UNIT_ID',
+            footerAd: 'YOUR_FOOTER_AD_UNIT_ID'
+        };
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -471,6 +496,23 @@
         </div>
     </header>
 
+    <!-- Top Ad Banner -->
+    <div class="container">
+        <div class="ad-space">
+            <span class="ad-label">Advertisement</span>
+            <!-- Ad Unit 1: Header Banner -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-EXAMPLE_PUBLISHER_ID"
+                 data-ad-slot="YOUR_HEADER_AD_UNIT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="container hero-content">
@@ -479,13 +521,6 @@
             <button class="btn btn-primary" id="heroBtn">Get Started for Free</button>
         </div>
     </section>
-
-    <!-- Ad Space -->
-    <div class="container">
-        <div class="ad-space">
-            <p>Advertisement Space - Google AdSense Unit</p>
-        </div>
-    </div>
 
     <!-- Features Section -->
     <section id="features" class="container">
@@ -545,6 +580,23 @@
         </div>
     </section>
 
+    <!-- Middle Ad Banner -->
+    <div class="container">
+        <div class="ad-space">
+            <span class="ad-label">Advertisement</span>
+            <!-- Ad Unit 2: Content Banner -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-EXAMPLE_PUBLISHER_ID"
+                 data-ad-slot="YOUR_CONTENT_AD_UNIT_ID_1"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
     <!-- Demo Section -->
     <section id="demo" class="container">
         <div class="section-title">
@@ -571,13 +623,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Ad Space -->
-    <div class="container">
-        <div class="ad-space">
-            <p>Advertisement Space - Google AdSense Unit</p>
-        </div>
-    </div>
 
     <!-- Testimonials -->
     <section id="testimonials" class="container">
@@ -628,6 +673,23 @@
         </div>
     </section>
 
+    <!-- Bottom Ad Banner -->
+    <div class="container">
+        <div class="ad-space">
+            <span class="ad-label">Advertisement</span>
+            <!-- Ad Unit 3: Content Banner 2 -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-EXAMPLE_PUBLISHER_ID"
+                 data-ad-slot="YOUR_CONTENT_AD_UNIT_ID_2"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
     <!-- CTA Section -->
     <section class="container">
         <div class="cta">
@@ -636,6 +698,23 @@
             <button class="btn btn-primary" id="ctaBtn">Get Started for Free</button>
         </div>
     </section>
+
+    <!-- Footer Ad Banner -->
+    <div class="container">
+        <div class="ad-space">
+            <span class="ad-label">Advertisement</span>
+            <!-- Ad Unit 4: Footer Banner -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-EXAMPLE_PUBLISHER_ID"
+                 data-ad-slot="YOUR_FOOTER_AD_UNIT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -854,6 +933,33 @@
                 button.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.15)';
             });
         });
+
+        // Function to initialize ads
+        function initializeAds() {
+            // This would be called when the page loads
+            console.log('Ad spaces initialized. Replace with your Ad Unit IDs in the adConfig object.');
+            
+            // Example of how to dynamically load ads
+            // const adSpaces = document.querySelectorAll('.ad-space');
+            // adSpaces.forEach((space, index) => {
+            //     const adUnitId = Object.values(window.adConfig)[index];
+            //     if (adUnitId && adUnitId !== 'YOUR_AD_UNIT_ID') {
+            //         space.innerHTML = `
+            //             <span class="ad-label">Advertisement</span>
+            //             <ins class="adsbygoogle"
+            //                 style="display:block"
+            //                 data-ad-client="ca-pub-EXAMPLE_PUBLISHER_ID"
+            //                 data-ad-slot="${adUnitId}"
+            //                 data-ad-format="auto"
+            //                 data-full-width-responsive="true"></ins>
+            //             <script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>
+            //         `;
+            //     }
+            // });
+        }
+
+        // Initialize ads when page loads
+        document.addEventListener('DOMContentLoaded', initializeAds);
     </script>
 </body>
 </html>
